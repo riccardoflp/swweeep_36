@@ -24,9 +24,7 @@
             bindings = <&kp LC(Z)>;
         };
     };
-};
 
-/ {
 
     behaviors {
         hm: homerow_mods {
@@ -93,7 +91,6 @@
                                     &trans     &trans  &trans  &trans  &trans  &trans
             >;
         };
-    };
 
         media_layer {
             bindings = <
@@ -104,4 +101,5 @@
             >;
         };
 
+    };
 };
