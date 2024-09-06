@@ -51,8 +51,8 @@
     &lt MEDIA Q &kp W       &kp E       &kp R         &kp T                                  &kp Y         &kp U         &kp I       &kp O       &lt MEDIA P
     &hm LGUI A  &hm LALT S  &hm LCTL D  &hs LSHIFT F  &kp G                                  &kp H         &hs RSHIFT J  &hm RCTL K  &hm RALT L  &hm RGUI SEMI
     &kp Z       &kp X       &kp C       &kp V         &kp B                                  &kp N         &kp M         &kp COMMA   &kp DOT     &kp FSLH
-// Riccardo //                          &lt FUNC ESC   &kp SPACE    &lt NAV TAB  &lt NUM ENTER  &lt  SYM BSPC  &lt MEDIA DEL
-                                        &lt FUNC BSPC  &lt SYM DEL  &lt NUM ESC  &lt NAV TAB    &kp  ENTER     &kp  SPACE 
+                          &lt FUNC ESC   &kp SPACE    &lt NAV TAB  &lt NUM ENTER  &lt  SYM BSPC  &lt MEDIA DEL
+// Matteo //              &lt FUNC BSPC  &lt SYM DEL  &lt NUM ESC  &lt NAV TAB    &kp  ENTER     &kp  SPACE 
             >;
         };
 
