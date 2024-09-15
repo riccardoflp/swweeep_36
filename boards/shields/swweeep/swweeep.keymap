@@ -58,7 +58,7 @@
 
         nav_layer {
             bindings = <
-    &kp K_REDO  &kp HOME    &kp UP     &kp END      &kp PG_UP                  &trans      &kp CAPS    &kp KP_NUM  &kp INS   &trans
+    &kp K_REDO  &kp HOME    &kp UP     &kp END      &kp PG_UP                  &trans      &kp CAPS    &kp KP_NUM  &kp INS   &bootloader
     &kp HOME    &kp LEFT    &kp DOWN   &kp RIGHT    &kp PG_DN                  &kp K_MENU  &kp LSHIFT  &kp LCTL    &kp LALT  &kp LGUI
     &kp K_UNDO  &kp K_COPY  &kp K_CUT  &kp K_PASTE  &trans                     &trans      &kp N1      &kp N2      &kp N3    &kp N0
                                        &trans       &trans     &trans  &trans  &trans      &trans
