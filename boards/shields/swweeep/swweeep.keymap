@@ -49,21 +49,21 @@
             label = "SQM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQT>; // Single Quote (')
+            bindings = <&pair SQT SPACE>; // Single Quote (')
         };
 
         dqm: macro_dqm {
             label = "DQM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DQT>; // Double Quote (")
+            bindings = <&pair DQT SPACE>; // Double Quote (")
         };
 
         bm: macro_bm {
             label = "BM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp GRAVE>; // Backtick (`)
+            bindings = <&pair GRAVE SPACE>; // Backtick (`)
         };
     };
 
