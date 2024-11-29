@@ -57,7 +57,7 @@
 	      label = "PAIR";
 	      compatible = "zmk,behavior-macro-two-param";
               #binding-cells = <2>; // Must be 2
-	      bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>, ;
+	      bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER> ;
 	    };
 
         sqm: macro_sqm {
