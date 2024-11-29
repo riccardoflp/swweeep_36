@@ -85,7 +85,7 @@
                                        &trans       &trans     &trans  &trans  &trans      &trans
             >;
         };
-"'`"'```
+
         sym_layer {
             bindings = <
     &trans     &kp GRAVE  &kp SQT   &kp DQT    &trans                     &trans    &kp LBRC  &kp RBRC  &kp AT     &trans
@@ -124,4 +124,3 @@
 
     };
 };
-"'"err""'``ttt""""'`''
