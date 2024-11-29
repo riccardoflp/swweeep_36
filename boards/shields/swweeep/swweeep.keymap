@@ -43,21 +43,21 @@
             bindings = <&kp>, <&kp>;
         };
         sqm: macro {
-            label = "SINGLE_QUOTE";
+            label = "SQM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp SQUO>; // Single Quote (')
+            bindings = <&kp SQT>; // Single Quote (')
         };
 
         dqm: macro {
-            label = "DOUBLE_QUOTE";
+            label = "DQM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
-            bindings = <&kp DQUO>; // Double Quote (")
+            bindings = <&kp DQT>; // Double Quote (")
         };
 
         bm: macro {
-            label = "BACKTICK";
+            label = "BM";
             compatible = "zmk,behavior-macro";
             #binding-cells = <0>;
             bindings = <&kp GRAVE>; // Backtick (`)
@@ -85,7 +85,6 @@
                                        &trans       &trans     &trans  &trans  &trans      &trans
             >;
         };
-
         sym_layer {
             bindings = <
     &trans     &kp GRAVE  &kp SQT   &kp DQT    &trans                     &trans    &kp LBRC  &kp RBRC  &kp AT     &trans
@@ -106,7 +105,7 @@
 
         num_layer {
             bindings = <
-    &trans    &kp bm     &kp sqm    &kp dqm    &trans                  &trans  &kp N7  &kp N8  &kp N9  &kp COMMA
+    &trans    &bm        &sqm       &dqm       &trans                  &trans  &kp N7  &kp N8  &kp N9  &kp COMMA
     &kp FSLH  &kp ASTRK  &kp MINUS  &kp PLUS   &kp PRCNT               &kp N0  &kp N4  &kp N5  &kp N6  &kp EQUAL
     &kp BSLH  &kp LT     &kp GT     &kp EQUAL  &trans                  &kp N0  &kp N1  &kp N2  &kp N3  &kp DOT
                                     &trans     &trans  &trans  &trans  &trans  &trans
