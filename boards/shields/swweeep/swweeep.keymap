@@ -42,6 +42,14 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
+	    just_left: left_no_mods {
+	          compatible = "zmk,behavior-mod-morph";
+	          label = "JUST_LEFT";
+	          #binding-cells = <0>;
+	          bindings = <&kp LEFT>, <&kp LEFT>;
+	          mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+	          keep-mods = <0>;
+	    };
     };
 
     macro {
@@ -51,7 +59,7 @@
               #binding-cells = <2>; // Must be 2
 	      bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER>, <&just_left>;
 	    };
-        
+
         sqm: macro_sqm {
             label = "SQM";
             compatible = "zmk,behavior-macro";
