@@ -42,25 +42,28 @@
             flavor = "balanced";
             bindings = <&kp>, <&kp>;
         };
-        sqm: macro {
+    };
+
+    macro {
+        sqm: macro_sqm {
             label = "SQM";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp SQT>; // Single Quote (')
+            #binding-cells = <2>;
+            bindings = <&kp SQT>,<&kp SPACE>; // Single Quote (')
         };
 
-        dqm: macro {
+        dqm: macro_dqm {
             label = "DQM";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp DQT>; // Double Quote (")
+            #binding-cells = <2>;
+            bindings = <&kp DQT>,<&kp SPACE>; // Double Quote (")
         };
 
-        bm: macro {
+        bm: macro_bm {
             label = "BM";
             compatible = "zmk,behavior-macro";
-            #binding-cells = <0>;
-            bindings = <&kp GRAVE>; // Backtick (`)
+            #binding-cells = <2>;
+            bindings = <&kp GRAVE>,<&kp SPACE>; // Backtick (`)
         };
     };
 
