@@ -30,6 +30,6 @@ west build -b planck_rev6
 build swweeep_36
 ```
 west build -d build/swweeep/right --pristine -b "nice_nano_v2" -- -DSHIELD=swweeep_right -DZMK_EXTRA_MODULES="/yourpath/swweeep_36/"
-west build -d build/swweeep/right --pristine -b "nice_nano_v2" -- -DSHIELD=swweeep_left -DZMK_EXTRA_MODULES="/yourpath/swweeep_36/"
-west build -d build/swweeep/right --pristine -b "nice_nano_v2" -- -DSHIELD=settings_reset -DZMK_EXTRA_MODULES="/yourpath/swweeep_36/"
+west build -d build/swweeep/left --pristine -b "nice_nano_v2" -- -DSHIELD=swweeep_left -DZMK_EXTRA_MODULES="/yourpath/swweeep_36/"
+west build -d build/swweeep/reset --pristine -b "nice_nano_v2" -- -DSHIELD=settings_reset -DZMK_EXTRA_MODULES="/yourpath/swweeep_36/"
 ```
