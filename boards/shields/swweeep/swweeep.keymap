@@ -97,7 +97,7 @@
     &hm LGUI A  &hm LALT S  &hm LCTL D  &hs LSHIFT F  &kp G                                  &kp H         &hs RSHIFT J  &hm RCTL K  &hm LALT L  &hm RGUI SEMI
     &kp Z       &kp X       &kp C       &kp V         &kp B                                  &kp N         &kp M         &kp COMMA   &kp DOT     &kp FSLH
                           &lt FUNC ESC   &kp SPACE    &lt NAV TAB  &lt NUM ENTER  &lt  SYM BSPC  &lt MOUSE DEL
-// Matteo //              &lt FUNC BSPC  &lt SYM DEL  &lt NUM ESC  &lt NAV TAB    &kp  ENTER     &kp  SPACE 
+// Matteo //              &lt FUNC BSPC  &lt SYM DEL  &lt NUM ESC  &lt NAV TAB    &lt MOUSE ENTER &kp  SPACE
             >;
         };
 
