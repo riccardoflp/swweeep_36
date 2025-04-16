@@ -56,21 +56,21 @@
             display-name = "Homerow-Mods";
         };
 	    just_left: left_no_mods {
-	          compatible = "zmk,behavior-mod-morph";
-	          label = "JUST_LEFT";
-	          #binding-cells = <0>;
-	          bindings = <&kp LEFT>, <&kp LEFT>;
-	          mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
-	          keep-mods = <0>;
+	        compatible = "zmk,behavior-mod-morph";
+	        label = "JUST_LEFT";
+	        #binding-cells = <0>;
+	        bindings = <&kp LEFT>, <&kp LEFT>;
+	        mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
+	        keep-mods = <0>;
 	    };
     };
 
     macro {
         pair: pair {
-	      label = "PAIR";
-	      compatible = "zmk,behavior-macro-two-param";
-              #binding-cells = <2>; // Must be 2
-	      bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER> ;
+	        label = "PAIR";
+	        compatible = "zmk,behavior-macro-two-param";
+            #binding-cells = <2>; // Must be 2
+	        bindings = <&macro_param_1to1>, <&kp MACRO_PLACEHOLDER>, <&macro_param_2to1>, <&kp MACRO_PLACEHOLDER> ;
 	    };
 
         sqm: macro_sqm {
