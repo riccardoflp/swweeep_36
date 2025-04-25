@@ -53,14 +53,6 @@
             bindings = <&kp>, <&kp>;
             display-name = "Homerow-Mods";
         };
-	    just_left: left_no_mods {
-	        compatible = "zmk,behavior-mod-morph";
-	        label = "JUST_LEFT";
-	        #binding-cells = <0>;
-	        bindings = <&kp LEFT>, <&kp LEFT>;
-	        mods = <(MOD_LSFT|MOD_RSFT|MOD_LCTL|MOD_RCTL|MOD_LALT|MOD_RALT|MOD_LGUI|MOD_RGUI)>;
-	        keep-mods = <0>;
-	    };
     };
 
     macro {
