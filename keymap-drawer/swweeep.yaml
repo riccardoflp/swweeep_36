@@ -59,9 +59,9 @@ layers:
   - ⌥
   - ⌘
   - ↶
+  - ✂
   - COPY
   - ✂
-  - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
@@ -96,9 +96,9 @@ layers:
   - ▷ SCROLL
   - {t: ▽, type: trans}
   - ↶
+  - ✂
   - COPY
   - ✂
-  - PASTE
   - {t: ▽, type: trans}
   - ⎘
   - {t: ▽, type: trans}
@@ -150,9 +150,9 @@ layers:
   - {t: ▽, type: trans}
   func:
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
+  - REWIND
+  - ⏸
+  - FAST FORW
   - 🕪
   - {t: ▽, type: trans}
   - F7
