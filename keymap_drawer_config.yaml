@@ -420,7 +420,7 @@ parse_config:
     PG_DN: 'PAG▼'
     HOME: 'HOME'
     END: 'END'
-    K_MENU: '☰'
+    K_C_MENU: '☰'
     CAPS: '🄰 CAPS'
     KP_NUM: 'NUM'
     SLCK: 'SCROLL LOCK'
