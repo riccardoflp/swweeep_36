@@ -431,7 +431,7 @@ parse_config:
     K_REDO: '↷'
     K_COPY: 'COPY'
     K_CUT: '✂'
-    K_PASTE: '✂'
+    K_PASTE: 'PASTE'
 
     C_MUTE: '🕨'
     C_VOL_UP: '🕪'
