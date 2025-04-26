@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - {t: P, h: adj}
-  - {t: A, h: LGUI}
-  - {t: S, h: LALT}
-  - {t: D, h: LCTL}
+  - {t: A, h: ⌘}
+  - {t: S, h: ⌥}
+  - {t: D, h: CTRL}
   - {t: F, h: LSHIFT}
   - G
   - H
   - {t: J, h: RSHIFT}
-  - {t: K, h: RCTL}
-  - {t: L, h: LALT}
-  - {t: ;, h: RGUI}
+  - {t: K, h: CTRL}
+  - {t: L, h: ⌥}
+  - {t: ;, h: ⌘}
   - Z
   - X
   - C
@@ -33,31 +33,31 @@ layers:
   - /
   - {t: ESC, h: func}
   - SPACE
-  - {t: TAB, h: nav}
+  - {t: ⭾, h: nav}
   - {t: ENTER, h: num}
   - {t: BSPC, h: sym}
-  - {t: DEL, h: mouse}
+  - {t: ⌦, h: mouse}
   nav:
   - REDO
   - HOME
-  - UP
+  - ⬆
   - END
   - PG UP
   - {t: ▽, type: trans}
-  - CAPS
+  - 🄰CAPS
   - KP NUM
-  - INS
+  - ⎀INS
   - '&bootloader'
   - '&lca_tab'
-  - LEFT
-  - DOWN
+  - ⬅
+  - ⬇
   - RIGHT
   - PG DN
   - MENU
   - LSHIFT
-  - LCTL
-  - LALT
-  - LGUI
+  - CTRL
+  - ⌥
+  - ⌘
   - UNDO
   - COPY
   - CUT
@@ -159,9 +159,9 @@ layers:
   - F8
   - F9
   - F10
-  - LGUI
-  - LALT
-  - LCTL
+  - ⌘
+  - ⌥
+  - CTRL
   - LSHIFT
   - VOL DN
   - {t: ▽, type: trans}
