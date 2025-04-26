@@ -431,7 +431,7 @@ parse_config:
     K_REDO: '↷'
     K_COPY: 'COPY'
     K_CUT: '✂'
-    K_PASTE: 'PASTE'
+    K_PASTE: '✂'
 
     C_MUTE: '🕨'
     C_VOL_UP: '🕪'
@@ -439,6 +439,9 @@ parse_config:
     C_PLAY_PAUSE: '⏯'
     C_PREV: '⏮'
     C_NEXT: '⏭'
+    C_RW: 'REWIND'
+    C_FF: 'FAST FORW'
+    C_PAUSE: '⏸'
 
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
