@@ -6,24 +6,29 @@ draw_config:
   combo_h: 26.0
   key_rx: 6.0
   key_ry: 6.0
+  dark_mode: false
+  n_columns: 1
+  separate_combo_diagrams: false
+  combo_diagrams_scale: 2
   inner_pad_w: 0.0
   inner_pad_h: 0.0
   outer_pad_w: 30.0
   outer_pad_h: 56.0
   line_spacing: 0.85
   arc_radius: 6.0
-  append_colon_to_layer_header: false
+  append_colon_to_layer_header: true
   small_pad: 15.0
   legend_rel_x: 0.0
   legend_rel_y: -5.0
-  keys_style: base
-  key_base_tile_rel_x: 0.0
-  key_base_tile_rel_y: -4.5
-  key_base_tile_rel_w: -12.5
-  key_base_tile_rel_h: -15.0
-  key_base_tile_rx: 3
-  key_base_tile_ry: 3
-  svg_style: |
+  draw_key_sides: true
+  key_side_pars:
+    rel_x: 0
+    rel_y: 4.5
+    rel_w: 12.5
+    rel_h: 15.0
+    rx: 3
+    ry: 3
+  svg_extra_style: |
     /* inherit to force styles through use tags*/
     svg path {
         fill: inherit;
@@ -138,33 +143,31 @@ draw_config:
 
     /* Start Layers Colors */
 
-    .layer-QWERTY rect.key, .layer-QWERTY rect.key-side,
-    .layer-CLMK rect.key, .layer-CLMK rect.key-side,
-    .layer-CLMK-DH rect.key, .layer-CLMK-DH rect.key-side,
+    .layer-default rect.key, .layer-default rect.key-side,
     rect.key.layer-hold, rect.key-side.layer-hold {
         fill: #b5b5b5;
     }
-    .layer-NAV rect.key, .layer-NAV rect.key-side,
+    .layer-nav rect.key, .layer-nav rect.key-side,
     rect.key.hold-NAV, rect.key-side.hold-NAV, .hold-NAV.hold {
         fill: #67a0d6;
     }
-    .layer-MOUSE rect.key, .layer-MOUSE rect.key-side,
+    .layer-mouse rect.key, .layer-mouse rect.key-side,
     rect.key.hold-MOUSE, rect.key-side.hold-MOUSE, .hold-MOUSE.hold {
         fill: #76a5af;
     }
-    .layer-SYM rect.key, .layer-SYM rect.key-side,
+    .layer-sym rect.key, .layer-sym rect.key-side,
     rect.key.hold-SYM, rect.key-side.hold-SYM, .hold-SYM.hold {
         fill: #93c47d;
     }
-    .layer-NUM rect.key, .layer-NUM rect.key-side,
+    .layer-num rect.key, .layer-num rect.key-side,
     rect.key.hold-NUM, rect.key-side.hold-NUM, .hold-NUM.hold {
         fill: #e06666;
     }
-    .layer-FUNC rect.key, .layer-FUNC rect.key-side,
+    .layer-func rect.key, .layer-func rect.key-side,
     rect.key.hold-FUN, rect.key-side.hold-FUN, .hold-FUN.hold {
         fill: #ffd966;
     }
-    .layer-ADJ rect.key, .layer-ADJ rect.key-side,
+    .layer-adj rect.key, .layer-adj rect.key-side,
     rect.key.hold-ADJ, rect.key-side.hold-ADJ, .hold-ADJ.hold {
         fill: #8e7cc3;
     }
@@ -193,7 +196,9 @@ draw_config:
     }
 
     /* End Layers Colors */
+  footer_text: ''
   shrink_wide_legends: 7
+  style_layer_activators: true
   glyph_tap_size: 14
   glyph_hold_size: 12
   glyph_shifted_size: 10
@@ -205,110 +210,34 @@ draw_config:
     material: https://fonts.gstatic.com/s/i/short-term/release/materialsymbolsoutlined/{}/default/48px.svg
   use_local_cache: true
 parse_config:
-  layer_names: ['QWERTY', 1, 2, 3, 4, 5, 6, 7, 8]
+  layer_names: [default, nav, mouse, sym, func, num, adj]
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map:
-    QK_BOOT: 'BOOT'
-    # home row
-    LGUI_T(KC_A): {t: 'A' , h: ⌘}
-    LALT_T(KC_S): {t: 'S' , h: ⌥}
-    LCTL_T(KC_D): {t: 'D' , h: CTRL}
-    LSFT_T(KC_F): {t: 'F' , h: ⇧}
-    RGUI_T(KC_SCLN): {t: ';', h: ⌘}
-    LALT_T(KC_L): {t: 'L' , h: ⌥}
-    RCTL_T(KC_K): {t: 'K' , h: CTRL}
-    RSFT_T(KC_J): {t: 'J' , h: ⇧}
-    LALT_T(KC_R): {t: 'R' , h: ⌥}
-    LCTL_T(KC_S): {t: 'S' , h: CTRL}
-    LSFT_T(KC_T): {t: 'T' , h: ⇧}
-    RGUI_T(KC_O): {t: 'O' , h: ⌘}
-    LALT_T(KC_I): {t: 'I' , h: ⌥}
-    RCTL_T(KC_E): {t: 'E' , h: CTRL}
-    RSFT_T(KC_N): {t: 'N' , h: ⇧}
-    HR_GUI_A: {t: 'A' , h: ⌘}
-    HR_ALT_S: {t: 'S' , h: ⌥}
-    HR_CTL_D: {t: 'D' , h: CTRL}
-    HR_SFT_F: {t: 'F' , h: ⇧}
-    HR_GU_SC: {t: ';', h: ⌘}
-    HR_ALT_L: {t: 'L' , h: ⌥}
-    HR_CTL_K: {t: 'K' , h: CTRL}
-    HR_SFT_J: {t: 'J' , h: ⇧}
-    HR_ALT_R: {t: 'R' , h: ⌥}
-    HR_CTL_S: {t: 'S' , h: CTRL}
-    HR_SFT_T: {t: 'T' , h: ⇧}
-    HR_GUI_O: {t: 'O' , h: ⌘}
-    HR_ALT_I: {t: 'I' , h: ⌥}
-    HR_CTL_E: {t: 'E' , h: CTRL}
-    HR_SFT_N: {t: 'N' , h: ⇧}
-    # shortcuts
-    LCTL(KC_Z): '↶'
-    LCTL(KC_X): '✂'
-    LCTL(KC_C): 'CTRL C'
-    LCTL(KC_V): 'CTRL V'
-    LCTL(KC_Y): '↷'
-    LCA(KC_TAB): 'CTRL ⌥ ⭾'
-    SH_CTL_Z: '↶'
-    SH_CTL_X: '✂'
-    SH_CTL_C: 'CTRL C'
-    SH_CTL_V: 'CTRL V'
-    SH_CTL_Y: '↷'
-    SH_CA_TB: 'CTRL ⌥⭾'
-    # layers
-    DF(_QWERTY): 'QWERTY'
-    DF(_COLEMAK): 'CLMK'
-    DF(_COLEMAK_DH): 'CLMK DH'
-    LT(_SYMBOLS,KC_BSPC): {t: ⌦, h: 'SYM', type: ''}
-    LT(_MOUSE,KC_DEL): {t: ⌫, h: 'MOUSE', type: ''}
-    LT(_NUMERIC,KC_ENT): {t: ⏎, h: 'NUM', type: ''}
-    LT(_NAV,KC_TAB): {t: ⭾, h: 'NAV', type: ''}
-    LT(_FUNCTIONS,KC_ESC): {t: 'ESC', h: 'FUNC', type: ''}
-    LT(_ADJUST,KC_Q): {t: 'Q', h: 'ADJ', type: ''}
-    LT(_ADJUST,KC_P): {t: 'P', h: 'ADJ', type: ''}
-    LT(_ADJUST,KC_SCLN): {t: ';', h: 'ADJ', type: ''}
-    DF_QWERT: 'QWERTY'
-    DF_CLMAK: 'CLMK'
-    DF_CLKDH: 'CLMK DH'
-    LSYM_BSP: {t: ⌦, h: 'SYM', type: 'hold-SYM'}
-    LMOU_DEL: {t: ⌫, h: 'MOUSE', type: 'hold-MOUSE'}
-    LNUM_ENT: {t: ⏎, h: 'NUM', type: 'hold-NUM'}
-    LNAV_TAB: {t: ⭾, h: 'NAV', type: 'hold-NAV'}
-    LFUN_ESC: {t: 'ESC', h: 'FUNC', type: 'hold-FUN'}
-    LADJ_Q: {t: 'Q', h: 'ADJ', type: 'hold-ADJ'}
-    LADJ_P: {t: 'P', h: 'ADJ', type: 'hold-ADJ'}
-    LADJ_SCL: {t: ';', h: 'ADJ', type: 'hold-ADJ'}
-    # macros
-    ASC_GRV: '` INTL.'
-    ASC_QUOT: ''' INTL.'
-    ASC_DQUO: '" INTL.'
-    ASC_TILD: '~ INTL.'
-    ASC_CIRC: '^ INTL.'
-    # others
-    RGB_TOG: RGB TOGGLE
-    RGB_SPI: RGB SPEED+
-    RGB_SPD: RGB SPEED-
-    RGB_HUI: RGB HUE+
-    RGB_HUD: RGB HUD-
-    RGB_SAI: RGB SAT+
-    RGB_SAD: RGB SAT-
-    RGB_VAI: RGB VAL+
-    RGB_VAD: RGB VAL-
-    RGB_MOD: RGB MODE+
-    RGB_MOD: RGB MODE-
-    FD_TIME: FADE TIME
-    FD_HUE: FADE HUE
-    FD_SAT: FADE SAT
-    FD_VAL: FADE VAL
-    FD_VALM: FADE MIN
-    __TRNS__: ▽
-    __HOLD__: {t: '◆', type: 'layer-hold'}
-    ________: ''
-
+  raw_binding_map: { }
   sticky_label: sticky
+  toggle_label: toggle
+  tap_toggle_label: tap-toggle
   trans_legend:
     t: ▽
     type: trans
+  layer_legend_map: {}
   mark_alternate_layer_activators: false
+  modifier_fn_map:
+    left_ctrl: Ctl
+    right_ctrl: Ctl
+    left_shift: Sft
+    right_shift: Sft
+    left_alt: Alt
+    right_alt: AltGr
+    left_gui: Gui
+    right_gui: Gui
+    keycode_combiner: '{mods}+{key}'
+    mod_combiner: '{mod_1}+{mod_2}'
+    special_combinations:
+      left_ctrl+left_alt+left_gui+left_shift: Hyper
+      left_ctrl+left_alt+left_shift: Meh
+  qmk_remove_keycode_prefix:
+  - KC_
   qmk_keycode_map:
     XXXXXXX: ''
     'NO': ''
@@ -376,63 +305,7 @@ parse_config:
     GT: '>'
     QUESTION: '?'
     QUES: '?'
-
-    UP: '⬆'
-    DOWN: '⬇'
-    LEFT: '⬅'
-    RGHT: '⮕'
-    SPC: ␣
-    TAB: ⭾
-    ENT: ⏎
-    DEL: '⌦'
-
-    LGUI: ⌘
-    RGUI: ⌘
-    LALT: ⌥
-    RALT: ⌥
-    LCTL: CTRL
-    RCTL: CTRL
-    LSFT: ⇧
-    RSFT: ⇧
-
-    ESC: ESC
-    PGUP: PAG▲
-    PGDN: PAG▼
-    HOME: HOME
-    APP: ☰
-    CAPS: 🄰CAPS
-    NUM: NUM
-    SCRL: SCROLL LOCK
-    INS: ⎀INS
-    PSCR: ⎙
-
-    MS_U: ▲ MOUSE
-    MS_D: ▼ MOUSE
-    MS_L: ◀ MOUSE
-    MS_R: ▶ MOUSE
-    BTN1: LEFT CLICK
-    BTN2: RIGHT CLICK
-    BTN3: MIDDLE CLICK
-    BTN4: ⎗
-    BTN5: ⎘
-    WH_U: △ SCROLL
-    WH_D: ▽ SCROLL
-    WH_L: ◁ SCROLL
-    WH_R: ▷ SCROLL
-    ACL0: MOUSE ACCEL 1
-    ACL1: MOUSE ACCEL 2
-    ACL2: MOUSE ACCEL 3
-
-    MRWD: REWIND
-    PAUS: PAUSE
-    MFFD: FAST FORW
-    MPRV: ⏮
-    MPLY: ⏯
-    MNXT: ⏭
-    VOLU: 🕪
-    VOLD: 🕩
-    MUTE: 🕨
-
+  zmk_remove_keycode_prefix: []
   zmk_keycode_map:
     EXCLAMATION: '!'
     EXCL: '!'
@@ -474,8 +347,8 @@ parse_config:
     COLON: ':'
     SINGLE_QUOTE: ''''
     SQT: ''''
-    APOSTROPHE: <
-    APOS: .
+    APOSTROPHE: ''''
+    APOS: ''''
     DOUBLE_QUOTES: '"'
     DQT: '"'
     COMMA: ','
@@ -498,4 +371,37 @@ parse_config:
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
+    
+    UP: '⬆'
+    DOWN: '⬇'
+    LEFT: '⬅'
+    RGHT: '⮕'
+    SPC: '␣'
+    TAB: '⭾'
+    ENT: '⏎'
+    DEL: '⌦'
+
+    LGUI: '⌘'
+    RGUI: '⌘'
+    LALT: '⌥'
+    RALT: '⌥'
+    LCTL: 'CTRL'
+    RCTL: 'CTRL'
+    LSFT: '⇧'
+    RSFT: '⇧'
+
+    ESC: 'ESC'
+    PGUP: 'PAG▲'
+    PGDN: 'PAG▼'
+    HOME: 'HOME'
+    APP: '☰'
+    CAPS: '🄰CAPS'
+    NUM: 'NUM'
+    SCRL: 'SCROLL LOCK'
+    INS: '⎀INS'
+    PSCR: '⎙'
+
+    '&bootloader': BOOT
   zmk_combos: {}
+  zmk_preamble: '#define KEYMAP_DRAWER'
+  zmk_additional_includes: []
