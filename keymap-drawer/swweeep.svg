@@ -563,7 +563,9 @@ rect.key.layer-hold, rect.key-side.layer-hold {
 <g transform="translate(33, 165)" class="key keypos-10">
 <rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key side"/>
 <rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key"/>
-<text x="0" y="-10" class="key tap"><tspan style="font-size: 88%">&amp;lca_tab</tspan></text>
+<text x="0" y="-10" class="key tap">
+<tspan x="0" dy="-0.85em">CTRL</tspan><tspan x="0" dy="0.85em">+</tspan><tspan x="0" dy="0.85em">…</tspan>
+</text>
 </g>
 <g transform="translate(99, 116)" class="key keypos-11">
 <rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key side"/>
@@ -1231,22 +1233,20 @@ rect.key.layer-hold, rect.key-side.layer-hold {
 <rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key trans"/>
 <text x="0" y="-10" class="key trans tap">▽</text>
 </g>
-<g transform="translate(99, 182)" class="key trans keypos-21">
-<rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key trans side"/>
-<rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key trans"/>
-<text x="0" y="-10" class="key trans tap">▽</text>
+<g transform="translate(99, 182)" class="key keypos-21">
+<rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key side"/>
+<rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key"/>
+<text x="0" y="-10" class="key tap">⏮</text>
 </g>
 <g transform="translate(165, 165)" class="key keypos-22">
 <rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key side"/>
 <rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key"/>
-<text x="0" y="-10" class="key tap">
-<tspan x="0" dy="-0.425em">PLAY</tspan><tspan x="0" dy="0.85em">PAUSE</tspan>
-</text>
+<text x="0" y="-10" class="key tap">⏯</text>
 </g>
-<g transform="translate(231, 190)" class="key trans keypos-23">
-<rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key trans side"/>
-<rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key trans"/>
-<text x="0" y="-10" class="key trans tap">▽</text>
+<g transform="translate(231, 190)" class="key keypos-23">
+<rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key side"/>
+<rect rx="3" ry="3" x="-27" y="-30" width="54" height="51" class="key"/>
+<text x="0" y="-10" class="key tap">⏭</text>
 </g>
 <g transform="translate(297, 198)" class="key keypos-24">
 <rect rx="6" ry="6" x="-33" y="-33" width="66" height="66" class="key side"/>

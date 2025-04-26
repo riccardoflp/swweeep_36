@@ -48,7 +48,7 @@ layers:
   - NUM
   - ⎀INS
   - BOOT
-  - '&lca_tab'
+  - CTRL + ⌥ + ⭾
   - ◀
   - ▼
   - ▶
@@ -170,9 +170,9 @@ layers:
   - F6
   - F11
   - {t: ▽, type: trans}
-  - {t: ▽, type: trans}
-  - PLAY PAUSE
-  - {t: ▽, type: trans}
+  - ⏮
+  - ⏯
+  - ⏭
   - 🕨
   - {t: ▽, type: trans}
   - F1
