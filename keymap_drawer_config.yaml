@@ -235,6 +235,7 @@ parse_config:
     '&bm': '`',
     '&sqm': '''',
     '&dqm': '"',
+    '&lca_tab': 'CTRL + ⌥ + ⭾'
 
   }
   sticky_label: sticky
@@ -435,9 +436,9 @@ parse_config:
     C_MUTE: '🕨'
     C_VOL_UP: '🕪'
     C_VOL_DN: '🕩'
-    PLAY_PAUSE: '⏯'
-    PREVIOUS: '⏮'
-    NEXT: '⏭'
+    C_PLAY_PAUSE: '⏯'
+    C_PREV: '⏮'
+    C_NEXT: '⏭'
 
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
