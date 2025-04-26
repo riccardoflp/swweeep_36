@@ -6,7 +6,7 @@ on:
     paths:
       - "./boards/shields/swweeep/swweeep.keymap"
       - "./boards/shields/swweeep/swweeep.dtsi"
-      - "./keymap_drawer.config.yaml"
+      - "./keymap_drawer_config.yaml"
       # - 'boards/*/*/*.keymap'
 
 jobs:
