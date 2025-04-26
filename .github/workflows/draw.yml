@@ -1,7 +1,7 @@
 # Example for using the keymap-drawer ZMK user config workflow
 name: Draw ZMK keymaps
 on:
-  workflow_dispatch:  # can be triggered manually
+  #workflow_dispatch:  # can be triggered manually
   push:               # automatically run on changes to following paths
     paths:
       - "./boards/shields/swweeep/swweeep.keymap"
