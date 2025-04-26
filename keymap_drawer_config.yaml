@@ -235,7 +235,7 @@ parse_config:
     '&bm': '`',
     '&sqm': '''',
     '&dqm': '"',
-    '&lca_tab': 'CTRL + ⌥ + ⭾'
+    '&lca_tab': 'CTRL+ ⌥+⭾'
 
   }
   sticky_label: sticky
