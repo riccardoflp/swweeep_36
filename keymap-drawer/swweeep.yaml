@@ -47,7 +47,7 @@ layers:
   - 🄰 CAPS
   - NUM
   - ⎀INS
-  - BOOT
+  - {t: ▽, type: trans}
   - CTRL+ ⌥+⭾
   - ◀
   - ▼
