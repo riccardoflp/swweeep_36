@@ -34,40 +34,40 @@ layers:
   - {t: ESC, h: func}
   - ␣
   - {t: ⭾, h: nav}
-  - {t: ENTER, h: num}
-  - {t: ⌫, h: sym}
-  - {t: ⌦, h: mouse}
+  - {t: ⏎, h: num}
+  - {t: ⌦, h: sym}
+  - {t: ⌫, h: mouse}
   nav:
-  - REDO
+  - ↷
   - HOME
-  - ⬆
+  - ▲
   - END
-  - PG UP
+  - PAG▲
   - {t: ▽, type: trans}
-  - 🄰CAPS
-  - KP NUM
+  - 🄰 CAPS
+  - NUM
   - ⎀INS
   - BOOT
   - '&lca_tab'
-  - ⬅
-  - ⬇
-  - ⮕
-  - PG DN
-  - MENU
+  - ◀
+  - ▼
+  - ▶
+  - PAG▼
+  - ☰
   - ⇧
   - CTRL
   - ⌥
   - ⌘
-  - UNDO
+  - ↶
   - COPY
-  - CUT
+  - ✂
   - PASTE
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - '1'
-  - '2'
-  - '3'
-  - '0'
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
+  - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {type: held}
@@ -75,7 +75,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   mouse:
-  - REDO
+  - ↷
   - RIGHT CLICK
   - ▲ MOUSE
   - LEFT CLICK
@@ -95,9 +95,9 @@ layers:
   - ▽ SCROLL
   - ▷ SCROLL
   - {t: ▽, type: trans}
-  - UNDO
+  - ↶
   - COPY
-  - CUT
+  - ✂
   - PASTE
   - {t: ▽, type: trans}
   - ⎘
@@ -153,7 +153,7 @@ layers:
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
-  - VOL UP
+  - 🕪
   - {t: ▽, type: trans}
   - F7
   - F8
@@ -163,7 +163,7 @@ layers:
   - ⌥
   - CTRL
   - ⇧
-  - VOL DN
+  - 🕩
   - {t: ▽, type: trans}
   - F4
   - F5
@@ -173,7 +173,7 @@ layers:
   - {t: ▽, type: trans}
   - PLAY PAUSE
   - {t: ▽, type: trans}
-  - MUTE
+  - 🕨
   - {t: ▽, type: trans}
   - F1
   - F2
