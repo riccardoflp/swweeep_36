@@ -51,7 +51,7 @@ layers:
   - '&lca_tab'
   - ⬅
   - ⬇
-  - RIGHT
+  - ⮕
   - PG DN
   - MENU
   - ⇧
@@ -113,16 +113,16 @@ layers:
   - {type: held}
   sym:
   - {t: ▽, type: trans}
-  - '`'
-  - ''''
-  - '"'
+  - '` INTL.'
+  - ''' INTL.'
+  - '" INTL.'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '{'
   - '}'
   - '@'
   - {t: ▽, type: trans}
-  - '~'
+  - ~ INTL.
   - '&'
   - '!'
   - '|'
@@ -132,7 +132,7 @@ layers:
   - )
   - _
   - '#'
-  - ^
+  - ^ INTL.
   - <
   - '>'
   - '='
@@ -187,9 +187,9 @@ layers:
   - {t: ▽, type: trans}
   num:
   - {t: ▽, type: trans}
-  - '&bm'
-  - '&sqm'
-  - '&dqm'
+  - '`'
+  - ''''
+  - '"'
   - {t: ▽, type: trans}
   - {t: ▽, type: trans}
   - '7'
