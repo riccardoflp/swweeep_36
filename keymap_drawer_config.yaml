@@ -213,7 +213,25 @@ parse_config:
   layer_names: [default, nav, mouse, sym, func, num, adj]
   preprocess: true
   skip_binding_parsing: false
-  raw_binding_map: { }
+  raw_binding_map: {
+    '&bootloader': 'BOOT',
+
+    '&mmv MOVE_UP': '▲ MOUSE',
+    '&mmv MOVE_DOWN': '▼ MOUSE',
+    '&mmv MOVE_LEFT': '◀ MOUSE',
+    '&mmv MOVE_RIGHT': '▶ MOUSE',
+
+    '&msc SCRL_UP': '△ SCROLL',
+    '&msc SCRL_DOWN': '▽ SCROLL',
+    '&msc SCRL_LEFT': '◁ SCROLL',
+    '&msc SCRL_RIGHT': '▷ SCROLL',
+
+    '&mkp LCLK': 'LEFT CLICK',
+    '&mkp RCLK': 'RIGHT CLICK',
+    '&mkp MCLK': 'MIDDLE CLICK',
+    '&mkp MB4': '⎗',
+    '&mkp MB5': '⎘'
+  }
   sticky_label: sticky
   toggle_label: toggle
   tap_toggle_label: tap-toggle
@@ -376,10 +394,11 @@ parse_config:
     DOWN: '⬇'
     LEFT: '⬅'
     RGHT: '⮕'
-    SPC: '␣'
+    SPACE: '␣'
     TAB: '⭾'
     ENT: '⏎'
     DEL: '⌦'
+    BSPC: '⌫'
 
     LGUI: '⌘'
     RGUI: '⌘'
@@ -387,21 +406,33 @@ parse_config:
     RALT: '⌥'
     LCTL: 'CTRL'
     RCTL: 'CTRL'
-    LSFT: '⇧'
-    RSFT: '⇧'
+    LSHIFT: '⇧'
+    RSHIFT: '⇧'
 
     ESC: 'ESC'
     PGUP: 'PAG▲'
     PGDN: 'PAG▼'
     HOME: 'HOME'
-    APP: '☰'
+    MENU: '☰'
     CAPS: '🄰CAPS'
-    NUM: 'NUM'
-    SCRL: 'SCROLL LOCK'
+    KPNUM: 'NUM'
+    SLCK: 'SCROLL LOCK'
     INS: '⎀INS'
-    PSCR: '⎙'
+    PSCRN: '⎙'
 
-    '&bootloader': BOOT
+    UNDO: '↶'
+    REDO: '↷'
+    COPY: 'COPY'
+    CUT: '✂'
+    PASTE: 'PASTE'
+
+    PREVIOUS: ⏮
+    NEXT: ⏭
+    PLAYPAUSE: ⏯
+    VOLUP: 🕪
+    VOLDN: 🕩
+    MUTE: 🕨
+
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
   zmk_additional_includes: []
