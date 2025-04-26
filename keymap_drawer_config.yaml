@@ -230,7 +230,12 @@ parse_config:
     '&mkp RCLK': 'RIGHT CLICK',
     '&mkp MCLK': 'MIDDLE CLICK',
     '&mkp MB4': '⎗',
-    '&mkp MB5': '⎘'
+    '&mkp MB5': '⎘',
+
+    '&bm': '`',
+    '&sqm': '''',
+    '&dqm': '"',
+
   }
   sticky_label: sticky
   toggle_label: toggle
@@ -335,7 +340,7 @@ parse_config:
     DLLR: $
     PERCENT: '%'
     PRCNT: '%'
-    CARET: ^
+    CARET: '^ INTL.'
     AMPERSAND: '&'
     AMPS: '&'
     ASTERISK: '*'
@@ -363,12 +368,12 @@ parse_config:
     SEMICOLON: ;
     SEMI: ;
     COLON: ':'
-    SINGLE_QUOTE: ''''
-    SQT: ''''
-    APOSTROPHE: ''''
-    APOS: ''''
-    DOUBLE_QUOTES: '"'
-    DQT: '"'
+    SINGLE_QUOTE: ''' INTL.'
+    SQT: ''' INTL.'
+    APOSTROPHE: ''' INTL.'
+    APOS: ''' INTL.'
+    DOUBLE_QUOTES: '" INTL.'
+    DQT: '" INTL.'
     COMMA: ','
     LESS_THAN: <
     LT: <
@@ -384,8 +389,8 @@ parse_config:
     RBKT: ']'
     RIGHT_BRACE: '}'
     RBRC: '}'
-    GRAVE: '`'
-    TILDE: '~'
+    GRAVE: '` INTL.'
+    TILDE: '~ INTL.'
     NON_US_HASH: '#'
     NUHS: '#'
     TILDE2: '~'
@@ -393,7 +398,7 @@ parse_config:
     UP: '⬆'
     DOWN: '⬇'
     LEFT: '⬅'
-    RGHT: '⮕'
+    RIGHT: '⮕'
     SPACE: '␣'
     TAB: '⭾'
     ENT: '⏎'
@@ -426,12 +431,12 @@ parse_config:
     CUT: '✂'
     PASTE: 'PASTE'
 
-    PREVIOUS: ⏮
-    NEXT: ⏭
-    PLAYPAUSE: ⏯
-    VOLUP: 🕪
-    VOLDN: 🕩
-    MUTE: 🕨
+    MUTE: '🕨'
+    VOLUP: '🕪'
+    VOLDN: '🕩'
+    PLAYPAUSE: '⏯'
+    PREVIOUS: '⏮'
+    NEXT: '⏭'
 
   zmk_combos: {}
   zmk_preamble: '#define KEYMAP_DRAWER'
