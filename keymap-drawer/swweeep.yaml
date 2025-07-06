@@ -11,16 +11,16 @@ layers:
   - I
   - O
   - {t: P, h: adj}
-  - {t: A, h: ⌘}
+  - {t: A, h: CTRL}
   - {t: S, h: ⌥}
-  - {t: D, h: CTRL}
+  - {t: D, h: ⌘}
   - {t: F, h: ⇧}
   - G
   - H
   - {t: J, h: ⇧}
-  - {t: K, h: CTRL}
+  - {t: K, h: ⌘}
   - {t: L, h: ⌥}
-  - {t: ;, h: ⌘}
+  - {t: ;, h: CTRL}
   - Z
   - X
   - C
@@ -55,9 +55,9 @@ layers:
   - PAG▼
   - ☰
   - ⇧
-  - CTRL
-  - ⌥
   - ⌘
+  - ⌥
+  - CTRL
   - ↶
   - ✂
   - COPY
@@ -159,9 +159,9 @@ layers:
   - F8
   - F9
   - F10
-  - ⌘
-  - ⌥
   - CTRL
+  - ⌥
+  - ⌘
   - ⇧
   - 🕩
   - {t: ▽, type: trans}
