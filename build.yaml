@@ -5,15 +5,28 @@
 # pass flags to the build command and `artifact-name` to assign a name to
 # distinguish build outputs from each other:
 #
-# board: [ "nice_nano_v2" ]
+# board: [ "nice_nano//zmk" ]
 # shield: [ "swweeep_left", "swweeep_right" ]
 include:
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: swweeep_left
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: swweeep_right
-  - board: nice_nano_v2
+  - board: nice_nano//zmk
     shield: settings_reset
+  # Builds that leave out the SoftDevice reservation. Flash these to go back to
+  # ZMK after RMK, which overwrites the SoftDevice the bootloader shipped with.
+  - board: nice_nano//zmk
+    shield: swweeep_left
+    snippet: nrf52840-nosd
+    artifact-name: swweeep_left-nosd
+  - board: nice_nano//zmk
+    shield: swweeep_right
+    snippet: nrf52840-nosd
+    artifact-name: swweeep_right-nosd
+  - board: nice_nano//zmk
+    shield: settings_reset
+    snippet: nrf52840-nosd
+    artifact-name: settings_reset-nosd
 #     cmake-args: -DCONFIG_ZMK_USB_LOGGING=y
 #     artifact-name: corne_left_with_logging
-#
